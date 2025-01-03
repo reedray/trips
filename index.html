@@ -4,20 +4,16 @@
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
-    <div id="app">
-        <!-- Ваш интерфейс -->
-    </div>
-    
-    <script>
-        let tg = window.Telegram.WebApp;
-        
-        // Инициализация
-        tg.ready();
-        
-        // Проверка открытия из attachment menu
-        if (tg.initDataUnsafe.start_param === 'attachment') {
-            // Специальная логика для attachment menu
-        }
-    </script>
+<div id="app">
+    <!-- Ваш интерфейс -->
+</div>
+
+<script>
+    let tg = window.Telegram.WebApp;
+
+    // Инициализация
+    tg.ready();
+    console.log(tg.initData.toString());
+</script>
 </body>
 </html>
